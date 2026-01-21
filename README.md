@@ -6,7 +6,7 @@ Egy könnyű, testreszabható kriptovaluta ár-widget, amely valós idejű árak
 
 ```
 widgets/
-priceWidget/
+  priceWidget/
     defaultConfig.json
     priceWidget.js
 index.html
@@ -24,6 +24,7 @@ README.md
 - Automatikus árfrissítés widgetenként
 - Világos és sötét téma támogatása
 - Több kérpenyőméretre optimalizált
+- Árfolyam megjelenése előtti várakozás esetén `loading` animació lett megvalósítva
 
 ## HTML data-* attribútumok
 
