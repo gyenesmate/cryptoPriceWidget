@@ -21,7 +21,6 @@ async function getDefaultConfig() {
     }
 }
 
-
 function getDataAttributes(container, defaultConfig) {
     return {
         theme: container.dataset.theme || defaultConfig.theme,
@@ -32,7 +31,7 @@ function getDataAttributes(container, defaultConfig) {
 }
 
 function initWidget(container, dataAttributes) {
-    widgetHTML = `
+    const widgetHTML = `
         <h2>${dataAttributes.currency} Price</h2>
         <div class="widget-body">
             <p>Currency: ${dataAttributes.currency}-${dataAttributes.fiat}</p>
@@ -77,7 +76,17 @@ async function fetchApiData(currency, fiat) {
 }
 
 function updateWidget(container, price) {
-    container.querySelector(".priceDisplay").textContent = price + ' ' + container.dataset.fiat;
+    if (price === null) {
+        container.querySelector(".priceDisplay").textContent = 'N/A';
+    } else {
+        let currencySymbols = {
+            'USD': '$',
+            'EUR': '€',
+            'HUF': 'Ft',
+        };
+        const symbol = currencySymbols[container.dataset.fiat] || '';
+        container.querySelector(".priceDisplay").textContent = price + ' ' + symbol;
+    }
 }
 
 
