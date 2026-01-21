@@ -1,1 +1,1 @@
-# cryptoPriceWidget
+# Crypto Price Widget
