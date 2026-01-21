@@ -1,0 +1,6 @@
+{
+    "theme": "light",
+    "currency": "BTC",
+    "fiat": "USD",
+    "refreshInterval": 3000
+}
