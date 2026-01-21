@@ -4,14 +4,17 @@ Egy könnyű, testreszabható kriptovaluta ár-widget, amely valós idejű árak
 
 ## Projekt struktúra
 
+```
 app/
-widgets/
-priceWidget/
-defaultConfig.json
-priceWidget.js
-index.html
-style.css
+  widgets/
+    priceWidget/
+      defaultConfig.json
+      priceWidget.js
+  index.html
+  style.css
 README.md
+```
+
 
 ## Főbb funkciók
 
@@ -33,10 +36,10 @@ README.md
 
 ## CMS által generálandó HTML elemek
 
-`
+```HTML
 <div class="price-widget" data-currency="SOL" data-fiat="USD"></div>
 <div class="price-widget" data-currency="BTC" data-fiat="EUR"></div>
-`
+```
 
 ## Preview elérése
 
