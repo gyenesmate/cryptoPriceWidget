@@ -44,4 +44,4 @@ README.md
 
 ## Preview elérése
 
-A következő linken meglehet tekinteni a Widgetek működését: [link text](https://gyenesmate.github.io/cryptoPriceWidget/)
+A következő linken meglehet tekinteni a Widgetek működését: [Preview](https://gyenesmate.github.io/cryptoPriceWidget/)
