@@ -23,6 +23,7 @@ README.md
   - `defaultConfig.json` fájl segítségével
 - Automatikus árfrissítés widgetenként
 - Világos és sötét téma támogatása
+- Több kérpenyőméretre optimalizált
 
 ## HTML data-* attribútumok
 
